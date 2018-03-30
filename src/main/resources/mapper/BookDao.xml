@@ -27,6 +27,19 @@
 			book_id
 		LIMIT #{offset}, #{limit}
 	</select>
+	<select id="queryListLikeName"  >
+		SELECT
+			book_id,
+			name,
+			number
+		FROM
+			book
+		WHERE
+			name LIKE '%#{name}%'
+		ORDER BY
+			book_id
+		
+	</select>
 	
 	<update id="reduceNumber">
 		UPDATE book

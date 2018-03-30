@@ -32,4 +32,10 @@ public interface BookDao {
 	 * @return 如果影响行数等于>1，表示更新的记录行数
 	 */
 	int reduceNumber(long bookId);
+	/**
+	 * 
+	 * @param name
+	 * @return
+	 */
+	List<Book> queryListLikeName(@Param("name") String name);
 }
