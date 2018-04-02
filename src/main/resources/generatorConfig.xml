@@ -42,7 +42,7 @@
 		</javaClientGenerator>
 
 		<!-- 这里是数据库的表名table_user 以及 POJO类的名字User -->
-		<table tableName="user" domainObjectName="User"
+		<table tableName="student" domainObjectName="Student"
 			enableCountByExample="false" enableSelectByExample="false"
 			enableUpdateByExample="false" enableDeleteByExample="false">
 
@@ -52,11 +52,7 @@
 			enableUpdateByExample="false" enableDeleteByExample="false">
 
 		</table>
-		<table tableName="student" domainObjectName="Student"
-			enableCountByExample="false" enableSelectByExample="false"
-			enableUpdateByExample="false" enableDeleteByExample="false">
-
-		</table>
+		
 	</context>
 
 </generatorConfiguration>
